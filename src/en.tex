@@ -1,0 +1,105 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+
+\setmainfont{FreeSerif}
+\setsansfont{FreeSans}
+\setmonofont{FreeMono}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue
+}
+
+\titleformat{\section}{\Large\bfseries\sffamily}{}{0em}{}[\vspace{-0.4em}\rule{\textwidth}{0.5pt}]
+\titlespacing*{\section}{0pt}{1em}{0.5em}
+\setlist[itemize]{left=0pt, nosep, label={--}}
+\emergencystretch 1em
+
+\begin{document}
+
+\begin{center}
+  {\Huge\bfseries\sffamily David Friev}
+  \vspace{0.2em}
+
+  19 y.o., Moscow $\cdot$
+  \href{https://github.com/koftamainee}{github.com/koftamainee} $\cdot$
+  \href{https://t.me/koftamainee}{@koftamainee} $\cdot$
+  \href{mailto:dev@koftamainee.ru}{dev@koftamainee.ru}
+\end{center}
+
+\section{About Me}
+
+I write in C++ and Go, 2nd year student of Applied Mathematics and Computer Science
+at Kosygin State University of Russia.
+I work on my own projects: most of my time goes to a game engine in C++
+and its asset pipeline in Rust, I also write a microservice search engine in Go.
+I want to study system architecture and grow in the development of high-load services.
+
+\section{Projects}
+
+\subsection*{\href{https://github.com/koftamainee/search-engine}{Search Engine}}
+\hfill \textit{Go, Docker}
+
+A microservice search system. Web crawler with Redis queue and robots.txt support,
+BM25 indexing via Meilisearch, REST API in Go, frontend in Nuxt.
+Infrastructure is deployed through Docker Compose.
+Was deployed on Yandex Cloud at \href{https://search.koftamainee.ru}{search.koftamainee.ru};
+currently inactive due to trial credits depletion.
+
+In development: a metrics service in Rust for collecting page-quality signals
+and PageRank on the link graph for result re-ranking.
+
+\subsection*{\href{https://github.com/koftamainee/mantle}{Mantle}}
+\hfill \textit{C++, Vulkan}
+
+A modular game engine.
+Vulkan renderer with Frame Graph for automatic GPU synchronization,
+virtual memory system with custom allocators (arena, tlsf),
+integration with flecs for ECS architecture and Jolt Physics for physics simulation,
+custom scripts for code generation and formatting, CI/CD with auto-builds for Linux and Windows.
+
+In development: extracting a stable Engine API for game code integration,
+writing high-level abstractions for asset and scene loading,
+and customizing rendering from game code.
+
+\subsection*{\href{https://github.com/koftamainee/mint}{Mint} / \href{https://github.com/koftamainee/mintload}{Mintload}}
+\hfill \textit{Rust, C}
+
+Asset pipeline for Mantle (canonically Mantle INput Tool):
+converts glTF/GLB to binary formats suitable for direct GPU upload,
+scene system via text .mscn files and conversion to binary .mscb format,
+project management system and incremental builds.
+Mintload --- a small C library for fast file loading into the engine via mmap, with a C++ wrapper.
+
+In development: shader compiler (.mshd), hot-reload support, release archive format (.mpak).
+
+\subsection*{Other}
+
+\href{https://github.com/koftamainee/chalkboard}{Chalkboard} --- a C++20 library for rendering LaTeX formulas with hot-reload.
+
+\href{https://github.com/koftamainee/danmaku}{Danmaku} --- a game engine in pure C with Lua scripting (SDL3).
+Currently on hold, but planning to rewrite rendering in Vulkan and finish the project.
+
+\section{Skills}
+
+\begin{tabular}{@{}ll}
+\textbf{Languages:} & C/C++, Go, Rust, C, Lua\\
+\textbf{Technologies:} & Vulkan, Docker, Linux \\
+\end{tabular}
+
+\section{Education}
+
+  \textbf{Kosygin State University of Russia}, Moscow \\
+  Applied Mathematics and Computer Science, 2nd year (2024--2028)
+
+\end{document}
