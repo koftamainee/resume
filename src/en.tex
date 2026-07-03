@@ -34,72 +34,67 @@
   19 y.o., Moscow $\cdot$
   \href{https://github.com/koftamainee}{github.com/koftamainee} $\cdot$
   \href{https://t.me/koftamainee}{@koftamainee} $\cdot$
-  \href{mailto:dev@koftamainee.ru}{dev@koftamainee.ru}
+  \href{mailto:dev@koftamainee.ru}{dev@koftamainee.ru} $\cdot$
+  +7~953~901~74~79
 \end{center}
 
 \section{About Me}
 
-I write in C++ and Go, 2nd year student of Applied Mathematics and Computer Science
+I develop in Go and C++, 3rd year student of Applied Mathematics and Computer Science
 at Kosygin State University of Russia.
-I work on my own projects: most of my time goes to a game engine in C++
-and its asset pipeline in Rust, I also write a microservice search engine in Go.
-I want to study system architecture and grow in the development of high-load services.
+I build microservices in Go (REST API, NATS, PostgreSQL, Redis) and work with Docker and Linux.
+Looking for a Junior Go Developer position or an internship in backend development.
 
 \section{Projects}
 
 \subsection*{\href{https://github.com/koftamainee/search-engine}{Search Engine}}
 \hfill \textit{Go, Docker}
 
-A microservice search system. Web crawler with Redis queue and robots.txt support,
-BM25 indexing via Meilisearch, REST API in Go, frontend in Nuxt.
-Infrastructure is deployed through Docker Compose.
-Was deployed on Yandex Cloud at \href{https://search.koftamainee.ru}{search.koftamainee.ru};
-currently inactive due to trial credits depletion.
-
-In development: a metrics service in Rust for collecting page-quality signals
-and PageRank on the link graph for result re-ranking.
+\begin{itemize}
+  \item A microservice search system: web crawler, BM25 indexing service, REST API in Go
+  \item Task queues via Redis, data storage in PostgreSQL and Meilisearch
+  \item Deployed on Yandex Cloud via Docker Compose at \href{https://search.koftamainee.ru}{search.koftamainee.ru}
+  \item Architecture designed for horizontal microservice scaling
+\end{itemize}
 
 \subsection*{\href{https://github.com/koftamainee/mantle}{Mantle}}
 \hfill \textit{C++, Vulkan}
 
-A modular game engine.
-Vulkan renderer with Frame Graph for automatic GPU synchronization,
-virtual memory system with custom allocators (arena, tlsf),
-integration with flecs for ECS architecture and Jolt Physics for physics simulation,
-custom scripts for code generation and formatting, CI/CD with auto-builds for Linux and Windows.
-
-In development: extracting a stable Engine API for game code integration,
-writing high-level abstractions for asset and scene loading,
-and customizing rendering from game code.
+\begin{itemize}
+  \item A modular game engine with Vulkan renderer and Frame Graph for automatic GPU synchronization
+  \item Custom memory management system (arena, tlsf allocators)
+  \item ECS architecture integration (flecs) and physics engine (Jolt Physics)
+  \item CI/CD with auto-builds for Linux and Windows
+\end{itemize}
 
 \subsection*{\href{https://github.com/koftamainee/mint}{Mint} / \href{https://github.com/koftamainee/mintload}{Mintload}}
 \hfill \textit{Rust, C}
 
-Asset pipeline for Mantle (canonically Mantle INput Tool):
-converts glTF/GLB to binary formats suitable for direct GPU upload,
-scene system via text .mscn files and conversion to binary .mscb format,
-project management system and incremental builds.
-Mintload --- a small C library for fast file loading into the engine via mmap, with a C++ wrapper.
-
-In development: shader compiler (.mshd), hot-reload support, release archive format (.mpak).
+\begin{itemize}
+  \item Asset pipeline for a game engine: converts glTF/GLB to binary formats for direct GPU upload
+  \item Scene system with text (.mscn) and binary (.mscb) formats, incremental builds
+  \item Mintload --- a C library for fast file loading via mmap (with C++ wrapper)
+\end{itemize}
 
 \subsection*{Other}
 
 \href{https://github.com/koftamainee/chalkboard}{Chalkboard} --- a C++20 library for rendering LaTeX formulas with hot-reload.
 
-\href{https://github.com/koftamainee/danmaku}{Danmaku} --- a game engine in pure C with Lua scripting (SDL3).
-Currently on hold, but planning to rewrite rendering in Vulkan and finish the project.
+\href{https://github.com/koftamainee/danmaku}{Danmaku} --- a bullet hell game engine in pure C with Lua scripting (SDL3).
 
 \section{Skills}
 
 \begin{tabular}{@{}ll}
-\textbf{Languages:} & C/C++, Go, Rust, C, Lua\\
-\textbf{Technologies:} & Vulkan, Docker, Linux \\
+\textbf{Languages:} & C, C++, Go, Rust, Lua, Python \\
+\textbf{Tools:} & Git, CMake, Docker, Docker Compose, Linux, CI/CD \\
+\textbf{Databases:} & PostgreSQL, Redis, NATS \\
+\textbf{Other:} & Vulkan, Nginx, REST API \\
+\textbf{English:} & B2 (Upper-Intermediate) \\
 \end{tabular}
 
 \section{Education}
 
   \textbf{Kosygin State University of Russia}, Moscow \\
-  Applied Mathematics and Computer Science, 2nd year (2024--2028)
+  Applied Mathematics and Computer Science, 3rd year (2024--2028)
 
 \end{document}

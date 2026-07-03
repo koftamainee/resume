@@ -34,68 +34,66 @@
   19 лет, Москва $\cdot$
   \href{https://github.com/koftamainee}{github.com/koftamainee} $\cdot$
   \href{https://t.me/koftamainee}{@koftamainee} $\cdot$
-  \href{mailto:dev@koftamainee.ru}{dev@koftamainee.ru}
+  \href{mailto:dev@koftamainee.ru}{dev@koftamainee.ru} $\cdot$
+  +7~953~901~74~79
 \end{center}
 
 \section{Обо мне}
 
-Пишу на C++ и Go, 2 курс ПМИ РГУ им. А. Н. Косыгина.
-Делаю свои проекты: больше всего времени трачу на игровой движок на C++
-и ассет-пайплайн к нему на Rust, ещё пишу микросервисный поисковик на Go.
-Хочу изучать архитектуру систем и развиваться в разработке высоконагруженных сервисов.
+Разрабатываю на Go и C++, 3 курс ПМИ РГУ им. А. Н. Косыгина.
+Пишу микросервисы на Go (REST API, NATS, PostgreSQL, Redis), работаю с Docker и Linux.
+Ищу позицию Junior Go Developer или стажировку в backend-разработке.
 
 \section{Проекты}
 
 \subsection*{\href{https://github.com/koftamainee/search-engine}{Search Engine}}
 \hfill \textit{Go, Docker}
 
-Микросервисная поисковая система. Веб-краулер с очередью на Redis и поддержкой robots.txt,
-BM25-индексация через Meilisearch, REST API на Go, фронтенд на Nuxt.
-Инфраструктура развёртывается через Docker Compose.
-Был развёрнут в Yandex Cloud по адресу \href{https://search.koftamainee.ru}{search.koftamainee.ru};
-в настоящее время сервис неактивен в связи с исчерпанием пробных средств.
-
-Сейчас в разработке: сервис метрик на Rust для сбора page-quality сигналов
-и PageRank на графе ссылок для переранжирования результатов.
+\begin{itemize}
+  \item Микросервисная поисковая система: веб-краулер, сервис индексации (BM25), REST API на Go
+  \item Очереди задач через Redis, данные в PostgreSQL и Meilisearch
+  \item Развёрнут в Yandex Cloud через Docker Compose по адресу \href{https://search.koftamainee.ru}{search.koftamainee.ru}
+  \item Архитектура с учётом горизонтального масштабирования микросервисов
+\end{itemize}
 
 \subsection*{\href{https://github.com/koftamainee/mantle}{Mantle}}
 \hfill \textit{C++, Vulkan}
 
-Модульный игровой движок.
-Vulkan-рендерер с Frame Graph для автоматической синхронизации GPU,
-система виртуальной памяти с кастомными аллокаторами (arena, tlsf),
-интеграция с flecs для ECS-архитектуры и с Jolt Physics для физической симуляции,
-кастомные скрипты для кодогенерации и форматирования, CI/CD с авто-сборкой под Linux и Windows.
-
-Сейчас в разработке: выделение стабильного Engine API для интеграции с game кодом,
-написание высокоуровневых абстракций для загрузки ассетов и сцен, а также кастомизция рендеринга из игрового кода.
+\begin{itemize}
+  \item Модульный игровой движок с Vulkan-рендерером и Frame Graph для автоматической синхронизации GPU
+  \item Кастомная система управления памятью (arena, tlsf аллокаторы)
+  \item Интеграция ECS-архитектуры (flecs) и физического движка (Jolt Physics)
+  \item CI/CD с автоматической сборкой под Linux и Windows
+\end{itemize}
 
 \subsection*{\href{https://github.com/koftamainee/mint}{Mint} / \href{https://github.com/koftamainee/mintload}{Mintload}}
 \hfill \textit{Rust, C}
 
-Ассет-пайплайн для Mantle (каноническое название Mantle INput Tool): конвертация glTF/GLB в бинарные форматы удобные для прямого копирования на GPU,
-система сцен через текстовые .mscn файлы и конвертация их в бинарный .mscb формат,
-система работы с проектом и инкрементальная сборка.
-Mintload --- небольшая библиотека на C для быстрой загрузки файлов в движок через mmap. Также есть wrapper под C++.
-
-Сейчас в разработке: шейдерный компилятор (.mshd), поддержка hot-reload и формат релиз-архива (.mpak).
+\begin{itemize}
+  \item Ассет-пайплайн для игрового движка: конвертация glTF/GLB в бинарные форматы для прямой загрузки на GPU
+  \item Система сцен с текстовым (.mscn) и бинарным (.mscb) форматами, инкрементальная сборка
+  \item Mintload --- библиотека на C для быстрой загрузки файлов через mmap (с C++ обёрткой)
+\end{itemize}
 
 \subsection*{Другие}
 
 \href{https://github.com/koftamainee/chalkboard}{Chalkboard} --- C++20 библиотека для рендеринга LaTeX-формул с hot-reload.
 
-\href{https://github.com/koftamainee/danmaku}{Danmaku} --- игровой движок на чистом C с Lua-скриптингом (SDL3). Сейчас заброшен, но планируется переписать рендеринг на Vulkan и довести проект до ума.
+\href{https://github.com/koftamainee/danmaku}{Danmaku} --- bullet hell игровой движок на чистом C с Lua-скриптингом (SDL3).
 
 \section{Навыки}
 
 \begin{tabular}{@{}ll}
-\textbf{Языки:} & C/C++, Go, Rust, C, Lua\\
-\textbf{Технологии:} & Vulkan, Docker, Linux \\
+\textbf{Языки:} & C, C++, Go, Rust, Lua, Python \\
+\textbf{Инструменты:} & Git, CMake, Docker, Docker Compose, Linux, CI/CD \\
+\textbf{Базы данных:} & PostgreSQL, Redis, NATS \\
+\textbf{Прочее:} & Vulkan, Nginx, REST API \\
+\textbf{Английский:} & B2 (Upper-Intermediate) \\
 \end{tabular}
 
 \section{Образование}
 
   \textbf{РГУ им. А.Н. Косыгина}, Москва \\
-  Прикладная математика и информатика, 2 курс (2024--2028)
+  Прикладная математика и информатика, 3 курс (2024--2028)
 
 \end{document}
