@@ -42,9 +42,19 @@
 
 Разрабатываю на Go и C++, 3 курс ПМИ РГУ им. А. Н. Косыгина.
 Пишу микросервисы на Go (REST API, NATS, PostgreSQL, Redis), работаю с Docker и Linux.
-Ищу позицию Junior Go Developer или стажировку в backend-разработке.
+Ищу позицию Junior Go Developer / C++ Developer или стажировку в backend-разработке.
 
 \section{Проекты}
+
+\subsection*{\href{https://github.com/koftamainee/nimbus}{Nimbus}}
+\hfill \textit{Go, Rust, gRPC}
+
+\begin{itemize}
+  \item Распределённый оркестратор контейнеров: управляющий кластер (Quorum) и рантайм контейнеров (Forge)
+  \item Quorum --- control plane на Go с собственной реализацией Raft-консенсуса, WAL-логирование, gRPC API, KV-хранилище с транзакциями
+  \item Forge --- контейнерный рантайм на Rust: изоляция через Linux namespaces/cgroups v2, распаковка образов
+  \item Планировщик размещения, цикл согласования состояния для самовосстановления при отказах узлов
+\end{itemize}
 
 \subsection*{\href{https://github.com/koftamainee/search-engine}{Search Engine}}
 \hfill \textit{Go, Docker}

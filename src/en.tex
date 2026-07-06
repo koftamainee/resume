@@ -43,9 +43,19 @@
 I develop in Go and C++, 3rd year student of Applied Mathematics and Computer Science
 at Kosygin State University of Russia.
 I build microservices in Go (REST API, NATS, PostgreSQL, Redis) and work with Docker and Linux.
-Looking for a Junior Go Developer position or an internship in backend development.
+Looking for a Junior Go Developer / C++ Developer position or an internship in backend development.
 
 \section{Projects}
+
+\subsection*{\href{https://github.com/koftamainee/nimbus}{Nimbus}}
+\hfill \textit{Go, Rust, gRPC}
+
+\begin{itemize}
+  \item Distributed container orchestrator: control plane (Quorum) and container runtime (Forge)
+  \item Quorum --- Go control plane with a from-scratch Raft consensus implementation, WAL logging, gRPC API, KV store with transactions
+  \item Forge --- Rust container runtime: isolation via Linux namespaces/cgroups v2, image unpacking
+  \item Placement scheduler and reconciliation loop for self-healing on node failures
+\end{itemize}
 
 \subsection*{\href{https://github.com/koftamainee/search-engine}{Search Engine}}
 \hfill \textit{Go, Docker}
